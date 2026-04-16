@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#f7f8fc] text-slate-950 font-sans antialiased;
+    background: linear-gradient(135deg, #f7f8fc 0%, #eef1f8 100%);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-md border border-slate-200/60 shadow-xl shadow-slate-200/20 rounded-2xl;
+  }
+  
+  .status-pill {
+    @apply px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider border;
+  }
+}
